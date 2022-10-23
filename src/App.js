@@ -5,15 +5,30 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
+import { Heading } from "@chakra-ui/react";
+import Stats from "./pages/Stats";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      {/* <AllRoutes /> */}
+      <Heading
+        mt={{ base: "40px", md: "40px", sm: "0px" }}
+        mb={{ md: "-100px", sm: "20px" }}
+      >
+        About Me
+      </Heading>
       <About />
+      <Heading
+        mt={{ md: "-50px", base: "50px" }}
+        mb={{ md: "50px", base: "40px" }}
+      >
+        Skills
+      </Heading>
       <Skills />
+      <Heading mt={{ base: "70px", lg: "" }}>Projects</Heading>
       <Projects />
+      <Stats />
       <Contact />
     </div>
   );

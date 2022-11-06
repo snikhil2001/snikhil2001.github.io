@@ -106,7 +106,10 @@ export default function Projects() {
               gap={{ md: "120px", sm: "0px" }}
               alignItems={"center"}
             >
-              <Link href="https://github.com/snikhil2001/tasteful-pump-9576">
+              <Link
+                target="_blank"
+                href="https://github.com/snikhil2001/tasteful-pump-9576"
+              >
                 <Button
                   w="10em"
                   flex={1}
@@ -121,7 +124,7 @@ export default function Projects() {
               </Link>
 
               <Link
-                target="blank"
+                target="_blank"
                 href="https://papaya-treacle-4fc14c.netlify.app/"
               >
                 <Button
@@ -248,7 +251,10 @@ export default function Projects() {
               gap={{ md: "120px", sm: "0px" }}
               alignItems={"center"}
             >
-              <Link href="https://github.com/Sanket01Hiremath/dusty-hat-6390">
+              <Link
+                target="_blank"
+                href="https://github.com/Sanket01Hiremath/dusty-hat-6390"
+              >
                 <Button
                   w="10em"
                   flex={1}
@@ -263,7 +269,7 @@ export default function Projects() {
               </Link>
 
               <Link
-                target="blank"
+                target="_blank"
                 href="https://spectacular-biscochitos-c217ff.netlify.app/"
               >
                 <Button
@@ -391,7 +397,10 @@ export default function Projects() {
               gap={{ md: "120px", sm: "0px" }}
               alignItems={"center"}
             >
-              <Link href="https://github.com/Sanket01Hiremath/dusty-hat-6390">
+              <Link
+                target="_blank"
+                href="https://github.com/Sanket01Hiremath/dusty-hat-6390"
+              >
                 <Button
                   w="10em"
                   flex={1}
@@ -406,7 +415,7 @@ export default function Projects() {
               </Link>
 
               <Link
-                target="blank"
+                target="_blank"
                 href="https://spectacular-biscochitos-c217ff.netlify.app/"
               >
                 <Button

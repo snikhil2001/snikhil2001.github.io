@@ -19,8 +19,8 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 // const Links = ["About", "Projects", "Skills", "Contact Me"];
 const Links = [
   { title: "About", path: "about" },
-  { title: "Skills", path: "skills" },
-  { title: "Projects", path: "projects" },
+  { title: "Skills", path: "skill" },
+  { title: "Projects", path: "project" },
   { title: "Contact", path: "contact" },
 ];
 
@@ -34,6 +34,8 @@ export default function Navbar() {
       top="0"
       bg={useColorModeValue("#17252A", "#17252A")}
       px={4}
+      w={{ md: "100%", sm: "100%", lg: "100%" }}
+      margin={{ md: "auto", base: "auto" }}
     >
       <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
         <IconButton
@@ -99,7 +101,9 @@ export default function Navbar() {
                 border="1px double white"
                 key={el.title}
               >
-                <Link to={el.path}>{el.title}</Link>
+                <Link onClick={onClose} to={el.path}>
+                  {el.title}
+                </Link>
               </Box>
             ))}
           </Stack>

@@ -3,15 +3,21 @@ import {
   Flex,
   Heading,
   Image,
+  Link,
   Stack,
   Text,
   useBreakpointValue,
   // Link,
 } from "@chakra-ui/react";
 
+import Resume from "../Images/Nikhil_Sahni_Resume.pdf";
+
 export default function About() {
   return (
-    <Stack id="about" minH={"100vh"} direction={{ base: "column", md: "row" }}>
+    <Stack
+      minH={{ lg: "60vh", sm: "auto", md: "auto", base: "auto" }}
+      direction={{ base: "column", md: "row" }}
+    >
       <Flex p={8} background="#" flex={1} align={"center"} justify={"center"}>
         <Stack spacing={6} w={"full"} maxW={"lg"}>
           <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
@@ -50,16 +56,19 @@ export default function About() {
             justify="center"
             spacing={4}
           >
-            <Button
-              rounded={"full"}
-              bg={"blue.400"}
-              color={"white"}
-              _hover={{
-                bg: "blue.500",
-              }}
-            >
-              Resume
-            </Button>
+            <a href={Resume} download={"Nikhil_Sahni_Resume"}>
+              {" "}
+              <Button
+                rounded={"full"}
+                bg={"blue.400"}
+                color={"white"}
+                _hover={{
+                  bg: "blue.500",
+                }}
+              >
+                Resume
+              </Button>
+            </a>
             {/* <Button rounded={"full"}>How It Works</Button> */}
           </Flex>
         </Stack>

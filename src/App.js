@@ -13,20 +13,24 @@ function App() {
     <div className="App">
       <Navbar />
       <Heading
+        id="about"
         mt={{ base: "40px", md: "40px", sm: "0px" }}
-        mb={{ md: "-100px", sm: "20px" }}
+        mb={{ md: "20px", sm: "20px" }}
       >
         About Me
       </Heading>
       <About />
       <Heading
-        mt={{ md: "-50px", base: "50px" }}
+        id="skill"
+        mt={{ md: "40px", base: "50px" }}
         mb={{ md: "50px", base: "40px" }}
       >
         Skills
       </Heading>
       <Skills />
-      <Heading mt={{ base: "70px", lg: "" }}>Projects</Heading>
+      <Heading id="project" mt={{ base: "70px", lg: "" }}>
+        Projects
+      </Heading>
       <Projects />
       <Stats />
       <Contact />

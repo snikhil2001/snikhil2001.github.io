@@ -22,6 +22,10 @@ const Links = [
   { title: "Skills", path: "skill" },
   { title: "Projects", path: "project" },
   { title: "Contact", path: "contact" },
+  {
+    title: "Resume",
+    path: "https://drive.google.com/file/d/1U9pKGFa6VbSpQNZ1h20XwmGdLEu6TE3i/view?usp=share_link",
+  },
 ];
 
 export default function Navbar() {
@@ -64,9 +68,19 @@ export default function Navbar() {
                 _hover={{ color: "#3AAFA9", background: "white" }}
                 key={el.title}
               >
-                <Link smooth={true} duration={1000} to={el.path}>
-                  {el.title}
-                </Link>
+                {el.path ===
+                "https://drive.google.com/file/d/1U9pKGFa6VbSpQNZ1h20XwmGdLEu6TE3i/view?usp=share_link" ? (
+                  <a
+                    target={"_blank"}
+                    href="https://drive.google.com/file/d/1U9pKGFa6VbSpQNZ1h20XwmGdLEu6TE3i/view?usp=share_link"
+                  >
+                    {el.title}
+                  </a>
+                ) : (
+                  <Link smooth={true} duration={1000} to={el.path}>
+                    {el.title}
+                  </Link>
+                )}
               </Button>
             ))}
           </HStack>

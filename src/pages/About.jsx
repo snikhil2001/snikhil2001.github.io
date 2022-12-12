@@ -9,6 +9,7 @@ import {
   useBreakpointValue,
   // Link,
 } from "@chakra-ui/react";
+import profile from "../Images/profpic.jpg";
 
 import Resume from "../Images/Nikhil_Sahni_Resume.pdf";
 
@@ -76,13 +77,11 @@ export default function About() {
       <Flex align="center" justify="center" flex={1}>
         <Image
           borderRadius="40px"
-          h="300px"
+          h="350px"
           w="300px"
           alt={"Login Image"}
           objectFit={"cover"}
-          src={
-            "https://media-exp1.licdn.com/dms/image/D4D03AQGLe1FjeL9mBg/profile-displayphoto-shrink_200_200/0/1666458839081?e=1671667200&v=beta&t=J-KxWCHmZM-TlxhXpvyGFpA5MZNZNDbmiH1zwWwmWxg"
-          }
+          src={profile}
         />
       </Flex>
     </Stack>

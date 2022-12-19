@@ -24,7 +24,7 @@ export default function Stats() {
       <Heading mt={5} mb={5}>
         My Stats
       </Heading>
-      {/* <GitHubCalendar
+      <GitHubCalendar
         style={{ margin: "auto" }}
         username="snikhil2001"
         transformData={selectLastHalfYear}
@@ -32,7 +32,7 @@ export default function Stats() {
         hideColorLegend
         blockSize={30}
         fontSize={20}
-      /> */}
+      />
       <Image
         m="auto"
         mt="20px"

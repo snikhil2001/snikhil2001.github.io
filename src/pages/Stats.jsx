@@ -24,7 +24,7 @@ export default function Stats() {
       <Heading mt={5} mb={5}>
         My Stats
       </Heading>
-      <GitHubCalendar
+      {/* <GitHubCalendar
         style={{ margin: "auto" }}
         username="snikhil2001"
         transformData={selectLastHalfYear}
@@ -32,11 +32,17 @@ export default function Stats() {
         hideColorLegend
         blockSize={30}
         fontSize={20}
-      />
+      /> */}
       <Image
         m="auto"
         mt="20px"
-        src="https://activity-graph.herokuapp.com/graph?username=snikhil2001"
+        src="https://github-readme-activity-graph.cyclic.app/graph?username=snikhil2001&bg_color=0D1117&color=5BCDEC&line=5BCDEC&point=FFFFFF&hide_border=true&width=100vh"
+      />
+      <Image
+        w="60%"
+        m="auto"
+        mt="20px"
+        src="https://github-readme-stats.vercel.app/api/top-langs/?username=snikhil2001&langs_count=8&count_private=true&layout=compact&theme=react&hide_border=true&bg_color=0D1117"
       />
 
       <Flex
@@ -51,12 +57,12 @@ export default function Stats() {
         <Image
           m="auto"
           mt={5}
-          src="https://github-readme-stats.vercel.app/api?username=snikhil2001&show_icons=true"
+          src="https://github-readme-streak-stats.herokuapp.com/?user=snikhil2001&hide_border=true&theme=react&hide_border=true&bg_color=0D1117"
         />
         <Image
           m="auto"
           mt={5}
-          src="https://github-readme-streak-stats.herokuapp.com/?user=snikhil2001"
+          src="https://github-readme-stats.vercel.app/api?username=snikhil2001&show_icons=true&locale=en&theme=react&hide_border=true&bg_color=0D1117"
         />
       </Flex>
     </Box>

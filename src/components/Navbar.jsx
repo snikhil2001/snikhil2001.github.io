@@ -72,6 +72,7 @@ export default function Navbar() {
                 "https://drive.google.com/file/d/1U9pKGFa6VbSpQNZ1h20XwmGdLEu6TE3i/view?usp=share_link" ? (
                   <a
                     target={"_blank"}
+                    rel="noreferrer"
                     href="https://drive.google.com/file/d/1U9pKGFa6VbSpQNZ1h20XwmGdLEu6TE3i/view?usp=share_link"
                   >
                     {el.title}

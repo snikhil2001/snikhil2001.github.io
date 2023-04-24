@@ -15,14 +15,17 @@ import Resume from "../Images/Nikhil_Sahni_Resume.pdf";
 export default function About() {
   return (
     <Stack
-      id="home"
+      id="about"
       className="about section"
       minH={{ lg: "60vh", sm: "auto", md: "auto", base: "auto" }}
       direction={{ base: "column", md: "row" }}
     >
       <Flex p={8} background="#" flex={1} align={"center"} justify={"center"}>
         <Stack spacing={6} w={"full"} maxW={"lg"}>
-          <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
+          <Heading
+            id="user-detail-name"
+            fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
+          >
             <Text
               as={"span"}
               position={"relative"}
@@ -40,7 +43,7 @@ export default function About() {
               Hey
             </Text>
             <br />{" "}
-            <Text id="user-detail-name" color={"blue.400"} as={"span"}>
+            <Text color={"blue.400"} as={"span"}>
               I am Nikhil
             </Text>
           </Heading>
@@ -60,7 +63,7 @@ export default function About() {
             spacing={4}
           >
             <a
-              id="resume-button-2"
+              id="resume-button-2 "
               href={Resume}
               download={"Nikhil_Sahni_Resume"}
             >

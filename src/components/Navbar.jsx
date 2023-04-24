@@ -18,7 +18,7 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
 // const Links = ["About", "Projects", "Skills", "Contact Me"];
 const Links = [
-  { title: "About", path: "about", class1: "nav-link", class2: "home" },
+  { title: "About", path: "about", class1: "nav-link", class2: "home about" },
   { title: "Skills", path: "skill", class1: "nav-link", class2: "skills" },
   {
     title: "Projects",
@@ -32,6 +32,7 @@ const Links = [
     path: "https://drive.google.com/file/d/1U9pKGFa6VbSpQNZ1h20XwmGdLEu6TE3i/view?usp=share_link",
     class1: "nav-link",
     class2: "resume",
+    id: "resume-button-1",
   },
 ];
 
@@ -87,6 +88,7 @@ export default function Navbar() {
                   </a>
                 ) : (
                   <Link
+                    id={`${el.id}`}
                     className={`${el.class1} ${el.class2}`}
                     smooth={true}
                     duration={1000}

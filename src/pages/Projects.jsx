@@ -20,6 +20,7 @@ export default function Projects() {
     <Box id="projects">
       <Center px={6} py={6}>
         <Stack
+          className="project-card"
           borderWidth="1px"
           borderRadius="lg"
           w={{ sm: "80%", md: "1100px" }}
@@ -40,7 +41,12 @@ export default function Projects() {
             p={1}
             pt={2}
           >
-            <Heading fontSize={"4xl"} color="white" fontFamily={"body"}>
+            <Heading
+              fontSize={"4xl"}
+              color="white"
+              fontFamily={"body"}
+              className="project-title"
+            >
               KFC Clone
             </Heading>
             <Text fontWeight={600} color={"white"} size="sm" mb={4}>
@@ -50,12 +56,14 @@ export default function Projects() {
               textAlign={"center"}
               color={useColorModeValue("white", "gray.400")}
               px={3}
+              className="project-description"
             >
               It is an e-commerce website where one can purchase fast food and
               beverages from their nearest restaurants. As the name justifies,
               this website mainly deals in fried chicken.
             </Text>
             <Stack
+              className="project-tech-stack"
               py={4}
               align={"center"}
               justify={"center"}
@@ -108,6 +116,7 @@ export default function Projects() {
               alignItems={"center"}
             >
               <Link
+                className="project-github-link"
                 target="_blank"
                 href="https://github.com/snikhil2001/tasteful-pump-9576"
               >
@@ -125,6 +134,7 @@ export default function Projects() {
               </Link>
 
               <Link
+                className="project-deployed-link"
                 target="_blank"
                 href="https://papaya-treacle-4fc14c.netlify.app/"
               >
@@ -154,6 +164,7 @@ export default function Projects() {
       </Center>
       <Center px={6} py={6}>
         <Stack
+          className="project-card"
           borderWidth="1px"
           borderRadius="lg"
           w={{ sm: "80%", md: "1100px" }}
@@ -174,7 +185,12 @@ export default function Projects() {
             p={1}
             pt={2}
           >
-            <Heading fontSize={"4xl"} color="white" fontFamily={"body"}>
+            <Heading
+              fontSize={"4xl"}
+              color="white"
+              fontFamily={"body"}
+              className="project-title"
+            >
               Cultfit Clone
             </Heading>
             <Text fontWeight={600} color={"white"} size="sm" mb={4}>
@@ -184,11 +200,13 @@ export default function Projects() {
               textAlign={"center"}
               color={useColorModeValue("white", "gray.400")}
               px={3}
+              className="project-description"
             >
               It is a fitness-based website and one can also purchase a variety
               of fitness products on this platform.
             </Text>
             <Stack
+              className="project-tech-stack"
               py={4}
               align={"center"}
               justify={"center"}
@@ -253,6 +271,7 @@ export default function Projects() {
               alignItems={"center"}
             >
               <Link
+                className="project-github-link"
                 target="_blank"
                 href="https://github.com/Sanket01Hiremath/dusty-hat-6390"
               >
@@ -270,6 +289,7 @@ export default function Projects() {
               </Link>
 
               <Link
+                className="project-deployed-link"
                 target="_blank"
                 href="https://spectacular-biscochitos-c217ff.netlify.app/"
               >
@@ -299,6 +319,7 @@ export default function Projects() {
       </Center>
       <Center px={6} py={6}>
         <Stack
+          className="project-card"
           borderWidth="1px"
           borderRadius="lg"
           w={{ sm: "80%", md: "1100px" }}
@@ -319,7 +340,12 @@ export default function Projects() {
             p={1}
             pt={2}
           >
-            <Heading fontSize={"4xl"} color="white" fontFamily={"body"}>
+            <Heading
+              fontSize={"4xl"}
+              color="white"
+              fontFamily={"body"}
+              className="project-title"
+            >
               Hubspot Clone
             </Heading>
             <Text fontWeight={600} color={"white"} size="sm" mb={4}>
@@ -329,11 +355,13 @@ export default function Projects() {
               textAlign={"center"}
               color={useColorModeValue("white", "gray.400")}
               px={3}
+              className="project-description"
             >
               It is a platform where you can grow your business with their
               amazing tools
             </Text>
             <Stack
+              className="project-tech-stack"
               py={4}
               align={"center"}
               justify={"center"}
@@ -399,6 +427,7 @@ export default function Projects() {
               alignItems={"center"}
             >
               <Link
+                className="project-github-link"
                 target="_blank"
                 href="https://github.com/Sanket01Hiremath/dusty-hat-6390"
               >
@@ -416,6 +445,7 @@ export default function Projects() {
               </Link>
 
               <Link
+                className="project-deployed-link"
                 target="_blank"
                 href="https://spectacular-biscochitos-c217ff.netlify.app/"
               >

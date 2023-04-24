@@ -40,11 +40,12 @@ export default function About() {
               Hey
             </Text>
             <br />{" "}
-            <Text color={"blue.400"} as={"span"}>
+            <Text id="user-detail-name" color={"blue.400"} as={"span"}>
               I am Nikhil
             </Text>
           </Heading>
           <Text
+            id="user-detail-intro"
             fontWeight="bold"
             fontSize={{ base: "md", lg: "lg" }}
             color={"gray.500"}
@@ -58,7 +59,11 @@ export default function About() {
             justify="center"
             spacing={4}
           >
-            <a href={Resume} download={"Nikhil_Sahni_Resume"}>
+            <a
+              id="resume-button-2"
+              href={Resume}
+              download={"Nikhil_Sahni_Resume"}
+            >
               {" "}
               <Button
                 rounded={"full"}
@@ -77,6 +82,7 @@ export default function About() {
       </Flex>
       <Flex align="center" justify="center" flex={1}>
         <Image
+          id="home-img"
           borderRadius="40px"
           h="350px"
           w="300px"

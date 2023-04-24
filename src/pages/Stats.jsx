@@ -40,6 +40,7 @@ export default function Stats() {
         src="https://github-readme-activity-graph.cyclic.app/graph?username=snikhil2001&bg_color=0D1117&color=5BCDEC&line=5BCDEC&point=FFFFFF&hide_border=true&width=100vh"
       />
       <Image
+        id="github-top-langs"
         w="40%"
         m="auto"
         mt="20px"
@@ -55,11 +56,13 @@ export default function Stats() {
       >
         {" "}
         <Image
+          id="github-streak-stats"
           m="auto"
           mt={5}
           src="https://github-readme-streak-stats.herokuapp.com/?user=snikhil2001&hide_border=true&theme=react&hide_border=true&bg_color=0D1117"
         />
         <Image
+          id="github-stats-card"
           m="auto"
           mt={5}
           src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=snikhil2001&hide_border=true&theme=react&hide_border=true&bg_color=0D1117"

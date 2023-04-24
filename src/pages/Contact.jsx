@@ -6,15 +6,24 @@ export default function Contact() {
     <Box mt={10} id="contact" p={10} background={"#3AAFA9"}>
       <Heading>Contact</Heading>
       <Stack mt={5} spacing={3}>
-        <Text fontWeight={500}>Phone No :- +91 9981894696</Text>
-        <Text fontWeight={500}>Gmail :- nikhilsahni2001@gmail.com</Text>
+        <Text id="contact-phone" fontWeight={500}>
+          Phone No :- +91 9981894696
+        </Text>
+        <Text id="contact-email" fontWeight={500}>
+          Gmail :- nikhilsahni2001@gmail.com
+        </Text>
         <Text fontWeight={500}>Address :- Neemuch, M.P.</Text>
         <Flex gap={10} pt={5} justify={"center"} align={"center"}>
-          <Link target="_blank" href="https://github.com/snikhil2001">
+          <Link
+            id="contact-github"
+            target="_blank"
+            href="https://github.com/snikhil2001"
+          >
             {" "}
             <BsGithub fontSize="2.5rem" />
           </Link>
           <Link
+            id="contact-linkedin"
             target="_blank"
             href="https://www.linkedin.com/in/nikhil-sahni-8a3562239/"
           >

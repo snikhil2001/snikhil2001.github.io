@@ -44,7 +44,7 @@ export default function Stats() {
         w="40%"
         m="auto"
         mt="20px"
-        src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=snikhil2001&bg_color=0D1117&color=5BCDEC&hide_border=true&width=100vh"
+        src="https://github-readme-stats.vercel.app/api/top-langs/?username=snikhil2001&bg_color=0D1117&color=5BCDEC&hide_border=true&width=100vh"
       />
       <Flex
         flexDirection={{
@@ -65,7 +65,7 @@ export default function Stats() {
           id="github-stats-card"
           m="auto"
           mt={5}
-          src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=snikhil2001&hide_border=true&theme=react&hide_border=true&bg_color=0D1117"
+          src="https://github-readme-stats.vercel.app/api?username=snikhil2001&hide_border=true&theme=react&hide_border=true&bg_color=0D1117"
         />
       </Flex>
     </Box>

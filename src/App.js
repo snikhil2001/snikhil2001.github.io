@@ -12,13 +12,6 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Heading
-        id="about"
-        mt={{ base: "40px", md: "40px", sm: "0px" }}
-        mb={{ md: "20px", sm: "20px" }}
-      >
-        About Me
-      </Heading>
       <About />
       <Heading
         id="skill"

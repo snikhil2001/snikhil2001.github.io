@@ -20,7 +20,7 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 const Links = [
   {
     title: "Home",
-    path: "about",
+    path: "home",
     class1: "nav-link",
     class2: "home",
     id: "home",
@@ -140,6 +140,7 @@ export default function Navbar() {
                 key={el.title}
               >
                 <Link
+                  id={`${el.id}`}
                   className={`${el.class1} ${el.class2}`}
                   onClick={onClose}
                   to={el.path}

@@ -15,6 +15,8 @@ import Resume from "../Images/Nikhil_Sahni_Resume.pdf";
 export default function About() {
   return (
     <Stack
+      id="home"
+      className="about section"
       minH={{ lg: "60vh", sm: "auto", md: "auto", base: "auto" }}
       direction={{ base: "column", md: "row" }}
     >

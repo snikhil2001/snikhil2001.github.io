@@ -70,7 +70,7 @@ export default function About() {
               spacing={4}
             >
               <a
-                id="resume-button-2 "
+                id="resume-button-2"
                 href={Resume}
                 download={"Nikhil_Sahni_Resume"}
               >

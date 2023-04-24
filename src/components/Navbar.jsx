@@ -33,6 +33,7 @@ export default function Navbar() {
 
   return (
     <Box
+      id="nav-menu"
       zIndex={5}
       position="sticky"
       top="0"

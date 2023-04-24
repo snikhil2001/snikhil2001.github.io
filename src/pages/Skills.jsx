@@ -2,7 +2,7 @@ import { Box, Heading, Image, SimpleGrid } from "@chakra-ui/react";
 
 export default function Skills() {
   return (
-    <>
+    <Box id="skills">
       <Heading mt={7} mb={7}>
         Frontend
       </Heading>
@@ -96,6 +96,6 @@ export default function Skills() {
           />
         </Box>
       </SimpleGrid>
-    </>
+    </Box>
   );
 }

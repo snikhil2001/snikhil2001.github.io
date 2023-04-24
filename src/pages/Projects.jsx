@@ -1,5 +1,6 @@
 import {
   Badge,
+  Box,
   Button,
   Center,
   Flex,
@@ -16,7 +17,7 @@ import hubspot from "../Images/hubspot.jpg";
 
 export default function Projects() {
   return (
-    <>
+    <Box id="projects">
       <Center px={6} py={6}>
         <Stack
           borderWidth="1px"
@@ -442,6 +443,6 @@ export default function Projects() {
           </Stack>
         </Stack>
       </Center>
-    </>
+    </Box>
   );
 }

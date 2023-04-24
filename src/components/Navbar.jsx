@@ -18,13 +18,20 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
 // const Links = ["About", "Projects", "Skills", "Contact Me"];
 const Links = [
-  { title: "About", path: "about" },
-  { title: "Skills", path: "skill" },
-  { title: "Projects", path: "project" },
-  { title: "Contact", path: "contact" },
+  { title: "About", path: "about", class1: "nav-link", class2: "home" },
+  { title: "Skills", path: "skill", class1: "nav-link", class2: "skills" },
+  {
+    title: "Projects",
+    path: "project",
+    class1: "nav-link",
+    class2: "projects",
+  },
+  { title: "Contact", path: "contact", class1: "nav-link", class2: "contact" },
   {
     title: "Resume",
     path: "https://drive.google.com/file/d/1U9pKGFa6VbSpQNZ1h20XwmGdLEu6TE3i/view?usp=share_link",
+    class1: "nav-link",
+    class2: "resume",
   },
 ];
 
@@ -79,7 +86,12 @@ export default function Navbar() {
                     {el.title}
                   </a>
                 ) : (
-                  <Link smooth={true} duration={1000} to={el.path}>
+                  <Link
+                    className={`${el.class1} ${el.class2}`}
+                    smooth={true}
+                    duration={1000}
+                    to={el.path}
+                  >
                     {el.title}
                   </Link>
                 )}
@@ -117,7 +129,11 @@ export default function Navbar() {
                 border="1px double white"
                 key={el.title}
               >
-                <Link onClick={onClose} to={el.path}>
+                <Link
+                  className={`${el.class1} ${el.class2}`}
+                  onClick={onClose}
+                  to={el.path}
+                >
                   {el.title}
                 </Link>
               </Box>

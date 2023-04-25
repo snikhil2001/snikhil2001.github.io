@@ -15,6 +15,7 @@ import {
 // import { NavLink } from "react-router-dom";
 import { Link } from "react-scroll";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import Resume from "../Images/Nikhil_Sahni_Resume.pdf";
 
 // const Links = ["About", "Projects", "Skills", "Contact Me"];
 const Links = [
@@ -79,18 +80,24 @@ export default function Navbar() {
           <HStack as={"nav"} spacing={4} display={{ base: "none", md: "flex" }}>
             {Links.map((el) => (
               <Button
+                id={el.id}
                 background={"#17252A"}
                 color={"white"}
                 _hover={{ color: "#3AAFA9", background: "white" }}
                 key={el.title}
               >
-                {el.path ===
-                "https://drive.google.com/file/d/1U9pKGFa6VbSpQNZ1h20XwmGdLEu6TE3i/view?usp=share_link" ? (
+                {el.title === "Resume" ? (
+                  // <a
+                  //   className={`${el.class1} ${el.class2}`}
+                  //   target={"_blank"}
+                  //   rel="noreferrer"
+                  //   href={el.path}
+                  // >
                   <a
                     className={`${el.class1} ${el.class2}`}
-                    target={"_blank"}
-                    rel="noreferrer"
-                    href="https://drive.google.com/file/d/1U9pKGFa6VbSpQNZ1h20XwmGdLEu6TE3i/view?usp=share_link"
+                    id="resume-link-1"
+                    href={Resume}
+                    download={"Nikhil_Sahni_Resume"}
                   >
                     {el.title}
                   </a>
@@ -132,6 +139,7 @@ export default function Navbar() {
           <Stack as={"nav"} spacing={4}>
             {Links.map((el) => (
               <Box
+                id={el.id}
                 borderRadius="10px"
                 fontSize="20px"
                 fontWeight="bold"
@@ -139,14 +147,33 @@ export default function Navbar() {
                 border="1px double white"
                 key={el.title}
               >
-                <Link
-                  id={`${el.id}`}
-                  className={`${el.class1} ${el.class2}`}
-                  onClick={onClose}
-                  to={el.path}
-                >
-                  {el.title}
-                </Link>
+                {el.title === "Resume" ? (
+                  // <a
+                  //   id={el.id}
+                  //   className={`${el.class1} ${el.class2}`}
+                  //   target={"_blank"}
+                  //   rel="noreferrer"
+                  //   href={el.path}
+                  // >
+                  <a
+                    className={`${el.class1} ${el.class2}`}
+                    id="resume-link-1"
+                    href={Resume}
+                    download={"Nikhil_Sahni_Resume"}
+                  >
+                    {el.title}
+                  </a>
+                ) : (
+                  <Link
+                    id={`${el.id}`}
+                    className={`${el.class1} ${el.class2}`}
+                    smooth={true}
+                    duration={1000}
+                    to={el.path}
+                  >
+                    {el.title}
+                  </Link>
+                )}
               </Box>
             ))}
           </Stack>

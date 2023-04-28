@@ -1,19 +1,7 @@
-import {
-  Box,
-  Button,
-  Flex,
-  Heading,
-  Image,
-  Stack,
-  Text,
-  useBreakpointValue,
-  // Link,
-} from "@chakra-ui/react";
-import profile from "../Images/profpic.jpg";
+import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import React from "react";
 
-import Resume from "../Images/Nikhil_Sahni_Resume.pdf";
-
-export default function About() {
+const About = () => {
   return (
     <Box id="about" className="about section">
       <Heading
@@ -23,85 +11,43 @@ export default function About() {
       >
         About
       </Heading>
-      <Stack
-        minH={{ lg: "60vh", sm: "auto", md: "auto", base: "auto" }}
-        direction={{ base: "column", md: "row" }}
+      <Flex
+        w="90%"
+        margin="auto"
+        py={10}
+        flexDirection={{ lg: "row", md: "row", sm: "column", base: "column" }}
+        justifyContent={"space-between"}
       >
-        <Flex p={8} background="#" flex={1} align={"center"} justify={"center"}>
-          <Stack spacing={6} w={"full"} maxW={"lg"}>
-            <Heading
-              id="user-detail-name"
-              fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
-            >
-              <Text
-                as={"span"}
-                position={"relative"}
-                _after={{
-                  content: "''",
-                  width: "full",
-                  height: useBreakpointValue({ base: "20%", md: "30%" }),
-                  position: "absolute",
-                  bottom: 1,
-                  left: 0,
-                  bg: "blue.400",
-                  zIndex: -1,
-                }}
-              >
-                Hey
-              </Text>
-              <br />{" "}
-              <Text color={"blue.400"} as={"span"}>
-                I am Nikhil
-              </Text>
-            </Heading>
-            <Text
-              id="user-detail-intro"
-              fontWeight="bold"
-              fontSize={{ base: "md", lg: "lg" }}
-              color={"gray.500"}
-            >
-              Passionate Full Stack Web Developer.Motivated, enthusiastic
-              professional who is ready to take on opportunities and face
-              challenges.
-            </Text>
-            <Flex
-              direction={{ base: "column", md: "row" }}
-              justify="center"
-              spacing={4}
-            >
-              <a
-                id="resume-link-2"
-                href={Resume}
-                download={"Nikhil_Sahni_Resume"}
-              >
-                <Button
-                  id="resume-button-2"
-                  rounded={"full"}
-                  bg={"blue.400"}
-                  color={"white"}
-                  _hover={{
-                    bg: "blue.500",
-                  }}
-                >
-                  Resume
-                </Button>
-              </a>
-              {/* <Button rounded={"full"}>How It Works</Button> */}
-            </Flex>
-          </Stack>
-        </Flex>
-        <Flex align="center" justify="center" flex={1}>
+        <Box
+          w={{ lg: "40%", md: "40%", sm: "100%", base: "100%" }}
+          mb={{ lg: "0px", md: "0px", sm: "20px", base: "20px" }}
+        >
           <Image
-            className="home-img"
-            borderRadius="40px"
-            h="350px"
-            w="300px"
-            alt={"Login Image"}
-            objectFit={"cover"}
-            src={profile}
+            borderRadius={"20px"}
+            src="https://t4.ftcdn.net/jpg/01/35/92/85/360_F_135928597_xU5EzKq6vpOeXPX5vsbI48zfVVkSRlrF.jpg"
+            w="100%"
           />
-        </Flex>
-      </Stack>
+        </Box>
+        <Box w={{ lg: "50%", md: "50%", sm: "100%", base: "100%" }}>
+          <Text
+            fontWeight="bold"
+            fontSize={{ base: "md", lg: "25px" }}
+            lineHeight={1.5}
+            color={"gray.500"}
+          >
+            A passionate and competent Web Developer having hands on experience
+            on MERN stack, ready to learn new technologies and always excited to
+            solve problems. I have been learning and building Web Apps from last
+            6 months. Well versed in coding using JavaScript and its frameworks.
+            Being from Non-CS background dream to be Web Developer was not easy
+            but after journey at Masai School, I am confident about all skills
+            essential in building Web Apps and loves to learn new things
+            everyday.
+          </Text>
+        </Box>
+      </Flex>
     </Box>
   );
-}
+};
+
+export default About;

@@ -24,7 +24,6 @@ const Links = [
     path: "home",
     class1: "nav-link",
     class2: "home",
-    id: "home",
   },
   { title: "About", path: "about", class1: "nav-link", class2: "about" },
   { title: "Skills", path: "skill", class1: "nav-link", class2: "skills" },
@@ -103,6 +102,7 @@ export default function Navbar() {
                   </a>
                 ) : (
                   <Link
+                    offset={-70}
                     id={`${el.id}`}
                     className={`${el.class1} ${el.class2}`}
                     smooth={true}

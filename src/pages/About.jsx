@@ -30,15 +30,17 @@ const About = () => {
         </Box>
         <Box w={{ lg: "50%", md: "50%", sm: "100%", base: "100%" }}>
           <Text
+            id="user-detail-intro"
             fontWeight="bold"
             fontSize={{ base: "md", lg: "25px" }}
             lineHeight={1.5}
             color={"gray.500"}
           >
             A passionate and competent Web Developer having hands on experience
-            on MERN stack, ready to learn new technologies and always excited to
-            solve problems. I have been learning and building Web Apps from last
-            6 months. Well versed in coding using JavaScript and its frameworks.
+            on MERN stack technologies like ReactJS, NodeJS,ExpressJS, and
+            MongoDB, ready to learn new technologies and always excited to solve
+            problems. I have been learning and building Web Apps from last 6
+            months. Well versed in coding using JavaScript and its frameworks.
             Being from Non-CS background dream to be Web Developer was not easy
             but after journey at Masai School, I am confident about all skills
             essential in building Web Apps and loves to learn new things

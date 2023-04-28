@@ -49,14 +49,13 @@ export default function Home() {
               </Text>
             </Heading>
             <Text
-              id="user-detail-intro"
               fontWeight="bold"
               fontSize={{ base: "md", lg: "lg" }}
               color={"gray.500"}
             >
               Passionate Full Stack Web Developer.Motivated, enthusiastic
               professional who is ready to take on opportunities and face
-              challenges. Proficient in ReactJS,NodeJS,ExpressJS and MongoDB.
+              challenges.
             </Text>
             <Flex
               direction={{ base: "column", md: "row" }}

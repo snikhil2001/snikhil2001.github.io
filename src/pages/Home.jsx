@@ -16,7 +16,7 @@ import Resume from "../Images/Nikhil_Sahni_Resume.pdf";
 
 export default function Home() {
   return (
-    <Box id="home">
+    <Box id="home" my={10} py={20}>
       <Stack
         minH={{ lg: "60vh", sm: "auto", md: "auto", base: "auto" }}
         direction={{ base: "column", md: "row" }}

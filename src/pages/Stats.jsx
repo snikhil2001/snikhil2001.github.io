@@ -2,23 +2,6 @@ import { Box, Flex, Heading, Image } from "@chakra-ui/react";
 import GitHubCalendar from "react-github-calendar";
 
 export default function Stats() {
-  const selectLastHalfYear = (contributions) => {
-    const currentYear = new Date().getFullYear();
-    const currentMonth = new Date().getMonth();
-    const shownMonths = 6;
-
-    return contributions.filter((day) => {
-      const date = new Date(day.date);
-      const monthOfDay = date.getMonth();
-
-      return (
-        date.getFullYear() === currentYear &&
-        monthOfDay > currentMonth - shownMonths &&
-        monthOfDay <= currentMonth
-      );
-    });
-  };
-
   return (
     <Box m="auto" mt="50px">
       <Heading mt={5} mb={5}>
@@ -27,10 +10,10 @@ export default function Stats() {
       <GitHubCalendar
         style={{ margin: "auto" }}
         username="snikhil2001"
-        transformData={selectLastHalfYear}
+        year={"last"}
         hideTotalCount
         hideColorLegend
-        blockSize={30}
+        blockSize={20}
         fontSize={20}
         count_private={true}
       />
